@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+:root{
+
+    /* ==================================================
+       🎨 FUNDOS
+       Use para body, sections, containers e cards.
+    ================================================== */
+
+    --bg-primary: #0D0D0D;     /* Fundo principal (body) */
+    --bg-secondary: #1A1A1A;   /* Fundo de formulários */
+    --bg-card: #242424;        /* Cards, inputs e caixas */
+
+
+    /* ==================================================
+       🔴 CORES PRINCIPAIS
+       Cor da identidade visual do site.
+    ================================================== */
+
+    --primary: #C1121F;        /* Botões principais */
+    --primary-hover: #E5383B;  /* Hover de botões */
+    --primary-dark: #8B0000;   /* Botões pressionados */
+
+
+    /* ==================================================
+       ⚪ TEXTOS
+       Use conforme a importância do texto.
+    ================================================== */
+
+    --text-primary: #FFFFFF;    /* Títulos */
+    --text-secondary: #CFCFCF;  /* Parágrafos */
+    --text-muted: #8A8A8A;      /* Placeholder, dicas */
+
+
+    /* ==================================================
+       ⚫ BORDAS
+       Para inputs, cards e divisórias.
+    ================================================== */
+
+    --border: #3A3A3A;
+    --border-hover: #555555;
+
+
+    /* ==================================================
+       ⚙️ CORES DE APOIO
+       Use para feedback ao usuário.
+    ================================================== */
+
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --error: #DC2626;
+
+
+    /* ==================================================
+       ✨ SOMBRAS
+       Facilita manter um padrão.
+    ================================================== */
+
+    --shadow-small: 0 2px 8px rgba(0,0,0,.20);
+    --shadow-medium: 0 4px 12px rgba(0,0,0,.30);
+    --shadow-large: 0 8px 20px rgba(0,0,0,.45);
+
+
+    /* ==================================================
+       📐 BORDAS ARREDONDADAS
+       Escolha conforme o componente.
+    ================================================== */
+
+    --radius-small: 6px;
+    --radius-medium: 10px;
+    --radius-large: 16px;
+
+
+    /* ==================================================
+       📖 GUIA RÁPIDO
+    --------------------------------------------------
+
+    body
+        background: var(--bg-primary);
+        color: var(--text-primary);
+
+    formulário
+        background: var(--bg-secondary);
+
+    input
+        background: var(--bg-card);
+        color: var(--text-primary);
+        border: 1px solid var(--border);
+
+    input:focus
+        border-color: var(--primary);
+
+    botão principal
+        background: var(--primary);
+        color: var(--text-primary);
+
+    botão:hover
+        background: var(--primary-hover);
+
+    botão:active
+        background: var(--primary-dark);
+
+    texto secundário
+        color: var(--text-secondary);
+
+    placeholder
+        color: var(--text-muted);
+
+    ================================================== */
+
+}
+
+body{
+
+    margin: 20px;
+
+}

@@ -1,0 +1,66 @@
+#div-form{
+    width: 600px;
+    min-height: 580px;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+}
+
+h3{
+    text-align: center;
+    padding: 20px 0px;
+    letter-spacing: 5px;
+}
+
+#formulario{
+    background-color: var(--bg-secondary);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+label{
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0px;
+    letter-spacing: 5px;
+}
+
+input{
+    height: 30px;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+#div-bnts{
+    margin: 20px 0px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+button{
+    width: 150px;
+    height: 30px;
+    margin-left: 40px;
+    color: var(--primary);
+    border: none;
+    cursor: pointer;
+}
+
+#btnAdd{
+    background-color: var(--primary);
+}
+
+#btnLimpar{
+    background-color: var(--primary);
+}
+
+#btn_lista{
+    width: 100%;
+    min-height: 200px;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: var(--bg-secondary);
+}
+
