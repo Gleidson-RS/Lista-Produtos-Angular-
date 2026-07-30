@@ -18,10 +18,14 @@
 
     <div id="div-lista">
 
-        <div class="div-item"> 1 - Pão - 4,50 </div>
-        <div class="div-item"> 2 - Manteiga - 16,00 </div>
-        <div class="div-item"> 3 - Café - 12,00 </div>
-        <div class="div-item"> 4 - Paçoca - 1,99 </div>
+        @for(elem of listaItens; track elem.idProduto)
+
+        {
+            <div class="div-item">
+                <input type= "checkbox" [checked]="elem.statusSelecionado"> {{elem.idProduto}} - {{elem.descricaoProduto}} - {{elem.valorUnitario}} </div>
+        }@empty{
+            <div class="div-item"> Nenhum produto na lista</div>
+        }
 
     </div>
 
