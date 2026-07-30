@@ -4,13 +4,13 @@
 
     <form id="formulario">
         <label for="descricao">Descrição Produto</label>
-        <input type="text" name="descricao" id="descricao" >
+        <input type="text" name="descricao" id="descricao" [(ngModel)] ="descricao_produto" >
 
         <label for="valor">Valor</label>
-        <input type="number" name="valor" name="valor" >
+        <input type="number" name="valor" id="valor" [(ngModel)] ="valor_unitario" >
 
         <div id="btns">
-            <button type="button" id="btnAdd">Adicionar</button>
+            <button type="button" id="btnAdd" (click)="addItem()" >Adicionar</button>
             <button type="button" id="btnLimpar">Limpar tudo</button>
         </div>
 
