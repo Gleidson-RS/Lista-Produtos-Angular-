@@ -11,10 +11,11 @@ import { Item } from './item'
 })
 export class ListaProdutosComponent {
 
-id_produto : number = 0
-descricao_produto : string = ''
-valor_unitario: number = 0.0
-listaItens : Item[] = []
+ id_produto : number = 0
+ descricao_produto : string = ''
+ valor_unitario: number = 0.0
+ listaItens : Item[] = []
+
 
 addItem(){
 
@@ -28,7 +29,7 @@ addItem(){
   item.idProduto = this.listaItens.length + 1
   item.descricaoProduto = this.descricao_produto
   item.valorUnitario = this.valor_unitario
-
+  
   this.listaItens.push(item)
 
   this.descricao_produto = ''
@@ -43,5 +44,21 @@ limparTudo(){
 }
 
 
+
+verificar() {
+
+  for (let item of this.listaItens) {
+
+      if (item.statusSelecionado) {
+          console.log(item.descricaoProduto + " está marcado");
+      } else {
+          console.log(item.descricaoProduto + " não está marcado");
+      } 
+
+  }
+
 }
 
+
+
+}

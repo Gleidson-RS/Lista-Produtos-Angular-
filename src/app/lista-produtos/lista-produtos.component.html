@@ -10,23 +10,25 @@
         <input type="number" name="valor" id="valor" [(ngModel)] ="valor_unitario" >
 
         <div id="btns">
-            <button type="button" id="btnAdd" (click)="addItem()" >Adicionar</button>
+            <button type="button" id="btnAdd" (click)="addItem()" (click)="verificar()" >Adicionar</button>
             <button type="button" id="btnLimpar">Limpar tudo</button>
+
         </div>
 
     </form>
 
     <div id="div-lista">
 
-        @for(elem of listaItens; track elem.idProduto)
+        @for(elem of listaItens; track elem.idProduto )
 
         {
             <div class="div-item">
-                <input type= "checkbox" [checked]="elem.statusSelecionado"> {{elem.idProduto}} - {{elem.descricaoProduto}} - {{elem.valorUnitario}} </div>
+                <input type="checkbox" [(ngModel)]="elem.statusSelecionado" [ngModelOptions]="{standalone: true}" (click)="verificar()" > {{elem.idProduto}} - <span [class.selecionado]="elem.statusSelecionado"> {{elem.descricaoProduto}} </span>  - R${{elem.valorUnitario}}  </div>
         }@empty{
-            <div class="div-item"> Nenhum produto na lista</div>
+            <div class="div-item" (click)="verificar()"> Nenhum produto na lista</div>
         }
 
     </div>
 
 </div>
+

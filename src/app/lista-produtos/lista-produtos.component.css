@@ -160,8 +160,6 @@ button{
 
 .div-item{
 
-    display:flex;
-
     justify-content:space-between;
 
     align-items:center;
@@ -189,8 +187,6 @@ button{
 
 .div-item::before{
 
-    content:"";
-
     width:10px;
 
     height:10px;
@@ -202,4 +198,21 @@ button{
     margin-right:15px;
 
     display:inline-block;
+}
+
+input[type="checkbox"] {
+
+    width: 16px !important;
+    height: 16px !important;
+
+    min-width: 16px;
+    min-height: 16px;
+
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.selecionado{
+    color: red;
 }
